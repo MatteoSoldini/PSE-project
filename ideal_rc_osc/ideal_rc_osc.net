@@ -1,0 +1,13 @@
+* C:\Users\Soldo\Documents\Uni\PSE-project\ideal_rc_osc.asc
+R1 V0 Vc 1k
+R2 V0 V+ 1k
+R3 0 V+ 1k
+C1 Vc 0 1µ
+XU2 V+ Vc N001 0 V0 level2 Avol=1Meg GBW=10Meg Slew=10Meg Ilimit=25m Rail=0 Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+V1 N001 0 10
+R4 N001 V+ 10k
+R5 V+ 0 10k
+.tran 0 200m 0 1m
+.lib UniversalOpAmp2.lib
+.backanno
+.end
