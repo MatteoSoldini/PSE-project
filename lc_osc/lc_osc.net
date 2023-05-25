@@ -1,0 +1,18 @@
+* C:\Users\Soldo\Documents\Uni\PSE-project\lc_osc\lc_osc.asc
+V1 N001 0 5
+L1 N001 N002 100µ
+L2 N002 N003 1m
+C1 N001 N003 4.7n
+C2 N002 N005 .01µ
+Q1 N003 N004 N005 0 NPN
+R1 N001 N004 1k
+R3 N005 0 1k
+R2 N004 0 10k
+C3 N004 0 .1µ
+C4 Vout N003 .1µ
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\Soldo\AppData\Local\LTspice\lib\cmp\standard.bjt
+.tran 1m uic
+.backanno
+.end
