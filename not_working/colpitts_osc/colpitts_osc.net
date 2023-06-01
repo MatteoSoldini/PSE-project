@@ -1,0 +1,20 @@
+* E:\Projects - Fast Life\Uni\PSE-project\not_working\colpitts_osc\colpitts_osc.asc
+V1 N001 0 9
+R1 N001 N003 100k
+R2 N003 0 5k
+C3 N003 N005 100p
+R4 N004 0 10k
+Q1 N002 P001 N004 0 BC547B
+C5 Vout N002 100p
+I1 N003 P001 PULSE(0 1m 0 0 0 0 0 1)
+R3 N001 N002 1k
+C4 N004 0 100n
+C1 0 N005 .01µ
+C2 Vout 0 .01µ
+L1 N005 Vout 10m
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\Soldo\AppData\Local\LTspice\lib\cmp\standard.bjt
+.tran 100m
+.backanno
+.end
